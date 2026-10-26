@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprendendo Flexbox</h1>
+        <p>Organizando elementos com CSS</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é Flexbox?</h2>
+            <p>
+                Flexbox é uma ferramenta do CSS que ajuda a organizar
+                os elementos da página em linhas ou colunas.
+                Ele também facilita o alinhamento das coisas.
+            </p>
+
+            <h2>Principais propriedades</h2>
+
+            <h3>display: flex;</h3>
+            <p>Ativa o Flexbox no elemento que contém os outros itens.</p>
+
+            <h3>flex-direction</h3>
+            <p>Define a direção dos itens. Pode ser row (linha) ou column (coluna).</p>
+
+            <h3>justify-content</h3>
+            <p>Organiza os itens no eixo principal, como no início, no centro ou com espaços entre eles.</p>
+
+            <h3>align-items</h3>
+            <p>Alinha os itens no eixo perpendicular ao principal.</p>
+
+            <h2>Exemplo prático</h2>
+            <p>Veja como os elementos ficam organizados usando Flexbox:</p>
+
+            <div class="caixa-flex">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+            </div>
+
+            <pre><code>
+.caixa-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+            </code></pre>
+
+            <h2>Onde podemos usar?</h2>
+            <p>
+                Você pode usar Flexbox em menus, botões e cartões,
+                por exemplo, quando você quiser alinhar os elementos
+                de maneira simples.
+            </p>
+
+            <a href="index.html">Voltar para o início</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Aba desenvolvida por Eduarda Gnoatto — © 2025</p>
+    </footer>
+
+</body>
+</html>

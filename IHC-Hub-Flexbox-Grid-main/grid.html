@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprendendo CSS Grid</h1>
+        <p>Organizando elementos em linhas e colunas</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é Grid?</h2>
+            <p>
+                CSS Grid é o que permite organizar
+                elementos em linhas e colunas. Assim, fica mais easy
+                montar layouts para uma página.
+            </p>
+
+            <h2>Principais propriedades</h2>
+
+            <h3>display: grid;</h3>
+            <p>Ativa o Grid no elemento que contém os itens.</p>
+
+            <h3>grid-template-columns</h3>
+            <p>Define a quantidade e o tamanho das colunas.</p>
+
+            <h3>grid-template-rows</h3>
+            <p>Define o tamanho das linhas.</p>
+
+            <h3>gap</h3>
+            <p>Define o espaço entre as linhas e as colunas.</p>
+
+            <h2>Exemplo prático</h2>
+            <p>
+                No exemplo, temos três colunas e seis itens.
+                Os que não cabem na primeira linha passam
+                para a próxima.
+            </p>
+
+            <div class="caixa-grid">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+                <div>Item 5</div>
+                <div>Item 6</div>
+            </div>
+
+            <pre><code>
+.caixa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+            </code></pre>
+
+            <h2>Onde posso usar?</h2>
+            <p>
+                Grid pode ser usado para organizar cartões,
+                galerias de imagens e várias áreas de um site.
+            </p>
+
+            <a href="index.html">Voltar para o início</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Aba desenvolvida por Eduarda Gnoatto — © 2025</p>
+    </footer>
+
+</body>
+</html>
